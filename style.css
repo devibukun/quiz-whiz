@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* overflow: hidden; */
 }
 body{
     color: #fff;
@@ -191,10 +190,13 @@ transition: .3s;
 /* ABOUT US SECTION */
 .main #about{
     background: #09001d;
-}
-#about{
+   }
+
+   #about{
     height: 100vh;
     width: 100%;
+    pointer-events:none;
+    display: block;
     }
 
 #about .heading {
@@ -223,6 +225,7 @@ transition: .3s;
     grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
     gap: 15px;
     justify-content: center;
+    transition: .3s ease;
     }
     
     .about-item-col{
@@ -234,6 +237,7 @@ transition: .3s;
         padding: 1rem;
        align-items: center;
        justify-content: center;
+       /* transform: translate(-50%, -50%) scale(1); */
     }
 .about-header{
         font-size: 16px;
@@ -295,11 +299,11 @@ transition: .3s;
    
 /* MEDIA QUEARIES FOR NAV BAR */
 @media(max-width:425px){
-   .navbar{
+.navbar{
     display: none;
-   }
+}
    
-    #navigation{
+ #navigation{
         display: block;
         width: 200px;
         height: 100vh;
@@ -309,9 +313,15 @@ transition: .3s;
         background-color: #09001d;
         transition: right 0.3s ease; 
         z-index: 2;
-    }
+        pointer-events: auto;
+}
     
-    #side-navbar a{
+#navigation.active{
+        opacity: 1;
+        pointer-events:none;
+}
+
+#side-navbar a{
        font-size: 18px;
         text-decoration: none;
         font-weight: 500;
@@ -323,13 +333,14 @@ transition: .3s;
         display: flex;
         letter-spacing: 15%;
         line-height: 24px;
-        }
+}
         
-        #side-navbar a:hover,
-        #side-navbar a.active {
+#side-navbar a:hover,
+#side-navbar a.active {
             color: #c40094;
-        }
-    #menuBtn{
+}
+
+#menuBtn{
         width: 70px;
         height:50px;
        text-align: center;
@@ -339,19 +350,16 @@ transition: .3s;
        z-index: 3;
        cursor: pointer;
       border-radius: 16px;
-    }
-       #menu{
+}
+ #menu{
         width: 70px;
         margin: 11px;
         color: #fff;
         font-size: 30px;
-    }
-    #navigation.active{
-        opacity: 1;
-    }
-
+}
+   
     /* POP UP INFO MEDIA QUERIES */
-    .popup-info{
+.popup-info{
         width: 400px;
-    }
+}
 }

@@ -6,20 +6,25 @@ const navigation = document.getElementById('navigation');
 const menuButton = document.getElementById('menuBtn');
 const menu = document.getElementById('menu');
 const sideBar = document.getElementById('side-navbar');
-
+const about = document.getElementById("about");
 
 // To show pop-up information using the start button/add background blur
 startBtn.onclick = () => {
      popupInfo.classList.add('active');
      main.classList.add('active');
-     navigation.classList.remove('active');
+     navigation.classList.add('active');
+     about.style.display = "none";
+     document.body.style.overflowY = "hidden";
+    
 }
 
 // To close the pop upinformation using the exit quiz button/remove background blur
 exitBtn.onclick = () => {
     popupInfo.classList.remove('active');
     main.classList.remove('active'); 
-    navigation.classList.add('active');
+    navigation.classList.remove('active');
+    about.style.display = "block";
+     document.body.style.overflowY = "auto";
 }
 
 // Side MenuBar Functionality
