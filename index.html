@@ -13,66 +13,122 @@
     <header class="header">
         <a href="#" class="logo">Quiz</a>
 
- <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-    </nav>
+            <nav class="navbar">
+                        <a href="#" class="active">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#">Contact</a>
+                </nav>
 
 
 <!-- side bar menu -->
  <div id="navigation">
-<nav id="side-navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-</nav>
+        <nav id="side-navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#">Contact</a>
+        </nav>
 
-<div id="menuBtn">
-    <i class='bx bx-menu-alt-right' id="menu"></i>
-</div>
+    <div id="menuBtn">
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+    </div>
 </div>
     </header>
  
-    <!-- HOME SECTION -->
-    <section class="home">
-    <div class="home-content">
-        <h1>Quiz Whiz </h1>
-        <p>Welcome To Quiz Whiz! Test your Knowledge, Challenge 
-            friends and see if you have what it takes to be an ultimate trivia champion.
-        </p>
-        <button class="start-btn">Start Quiz</button>
+    <div class= "container">
+        <section class="quiz-section">
+            
+            
+            <!-- Quiz Section -->
+ <div class="quiz-box">
+            <h1>Quiz Whiz</h1>
+    <div class="quiz-header">
+        <span>Quiz Website Tutorials</span>
+        <span class="header-score">Score:0/5</span>
     </div>
- </section>
-   </main>
+          <h2 class="question-text">What does HTML stands For?</h2>
+    <div class="option-list">
+        <div class="option">
+                    <span>A. Hyper Text Multi Language</span>
+                </div>
+                <div class="option">
+                    <span>B. Hyper Text Multiple Language</span>
+                </div>
+                <div class="option">
+                    <span>C. Hyper Text Markup Language</span>
+                </div>
+                <div class="option">
+                    <span>D. Hyper Text Multi Language</span>
+        </div> 
+    </div>
+
+        <div class="quiz-footer">
+            <span class="question-total">1 of 5 Questions</span>
+            <button class="next-btn">Next</button>
+        </div>
+</div>
+
+
+<!-- result section -->
+<div class="result-box">
+       <h2>Quiz Result!</h2>
+        <div class="percentage-container">
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+        
+            <span class="score-text">Your Score 0 out of 5</span>
+        </div>
+        
+        <div class="buttons">
+            <button class="tryAgain-btn">Try Again</button>
+            <button class="goHome-btn">Go To Home</button>
+        </div>
+    </div>
+</section>
+</div>
+    
+    
+    <!-- HOME SECTION -->
+      
+
+<section class="home">
+    <div class="home-content">
+                <h1>Quiz Whiz </h1>
+                <p>Welcome To Quiz Whiz! Test your Knowledge, Challenge 
+                    friends and see if you have what it takes to be an ultimate trivia champion.
+                </p>
+                <button class="start-btn">Start Quiz</button>
+    </div>
+</section>
+</main>
 
    <!-- POP UP INFO -->
-   <div class="popup-info">
+<div class="popup-info">
     <h2>Quiz Guide</h2>
-    <span class="info">1. Choose your answers currently because once picked, you will not be able to change it.</span>
-    <span class="info">2. Beat The Clock (10 seconds)</span>
-    <span class="info">3. Focus On The Current Question Before Moving 
-        To The Next One.</span>
+            <span class="info">1. Choose your answers currently because once picked, you will not be able to change it.</span>
+            <span class="info">2. Beat The Clock (10 seconds)</span>
+            <span class="info">3. Focus On The Current Question Before Moving 
+            To The Next One.</span>
       
-        <div class="btn-group">
-            <button class="info-btn exit-btn">Exit Quiz</button>
-            <a href="#" class="info-btn continue-btn">Continue</a>
-        </div>
-   </div>
+    <div class="btn-group">
+            <button class="info-btn exit-btn" onclick="hideSection()">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn " onclick="showSection()">Continue</a>
+    </div>
+</div>
 
 
    <!-- ABOUT SECTION -->
-<main class="main">
-    <section id="about">
-        <header class="heading">
+
+<section id="about">
+    <header class="heading">
             <h1>About Us</h1>
-        </header>
-    <div class="about-content-row">
+    </header>
+<div class="about-content-row">
        
-        <!-- no one -->
-            <div class="about-item-col">
+<!-- no one -->
+    <div class="about-item-col">
                 <div class="about-header">
                     <p>Quiz Whiz</p>
                 </div>
@@ -85,68 +141,68 @@
             </div>
     </div>
    
-    <!-- no two -->
+<!-- no two -->
+    <div class="about-item-col">
+            <div class="about-header">
+                <p>Mission Statement</p>
+            </div>
+            <div class="btn-group"></div>
+        <div class="about-sub-content">
+                <p>Our Mission is to inspire curiosity and foster learning
+                through engaging and interactive Trivia. We aim for a platform where players can challenge
+                themselves, expand their Knowledge and enjoy a friendly competition.
+                </p>
+        </div>
+    </div>
+
+<!-- no three -->
+    <div class="about-item-col">
+            <div class="about-header">
+                <p>Team Background</p>
+            </div>
+            <div class="btn-group"></div>
+        <div class="about-sub-content">
+                <p>Akinrinola Toluwalase Divine is the front-end developer behind Quiz
+                    Whiz, creating sleek, user-friendly interfaces with HTML, CSS, JavaScript.
+                She's focused to make sure that the game looks great and runs smoothly
+                on all devices, allowing players to enjoy trivia without distractions.
+                
+                </p>
+        </div>
+    </div>
+
+<!-- no four -->
+    <div class="about-item-col">
+            <div class="about-header">
+                <p>History</p>
+            </div>
+            <div class="btn-group"></div>
+        <div class="about-sub-content">
+                <p>Quix Whiz began with a small idea: to make learning fun and accesible
+                    through the power of trivia. What started as a small project among the
+                    group of trivia enthusiast is growing to  a full-fledged platform,
+                    driven by passion for Knowledge. The team combined their skills, development
+                    , and content creation to build an engaging, interactive, and user- friendly game.
+                </p>
+        </div>
+    </div>
+
+<!-- no five -->
     <div class="about-item-col">
         <div class="about-header">
-            <p>Mission Statement</p>
+            <p>Features</p>
         </div>
         <div class="btn-group"></div>
     <div class="about-sub-content">
-            <p>Our Mission is to inspire curiosity and foster learning
-             through engaging and interactive Trivia. We aim for a platform where players can challenge
-            themselves, expand their Knowledge and enjoy a friendly competition.
-            </p>
+        <ol>
+            <li>Timed result for added challenge.  </li>
+            <li>Progress bar to track your game.</li> 
+            <li>Instant result after each Question</li> 
+            <li>Scoreboard to rank your performance.</li> 
+            <li>Percentage to show overall accuracy.</li> 
+        </ol>
+        </div>
     </div>
-</div>
-
-<!-- no three -->
-<div class="about-item-col">
-    <div class="about-header">
-        <p>Team Background</p>
-    </div>
-    <div class="btn-group"></div>
-<div class="about-sub-content">
-        <p>Akinrinola Toluwalase Divine is the front-end developer behind Quiz
-            Whiz, creating sleek, user-friendly interfaces with HTML, CSS, JavaScript.
-         She's focused to make sure that the game looks great and runs smoothly
-          on all devices, allowing players to enjoy trivia without distractions.
-           
-        </p>
-</div>
-</div>
-
-<!-- no four -->
-<div class="about-item-col">
-    <div class="about-header">
-        <p>History</p>
-    </div>
-    <div class="btn-group"></div>
-<div class="about-sub-content">
-        <p>Quix Whiz began with a small idea: to make learning fun and accesible
-            through the power of trivia. What started as a small project among the
-            group of trivia enthusiast is growing to  a full-fledged platform,
-            driven by passion for Knowledge. The team combined their skills, development
-            , and content creation to build an engaging, interactive, and user- friendly game.
-        </p>
-</div>
-</div>
-
-<!-- no five -->
-<div class="about-item-col">
-    <div class="about-header">
-        <p>Features</p>
-    </div>
-    <div class="btn-group"></div>
-<div class="about-sub-content">
-    <ol>
-        <li>Timed result for added challenge.  </li>
-        <li>Progress bar to track your game.</li> 
-        <li>Instant result after each Question</li> 
-        <li>Scoreboard to rank your performance.</li> 
-        <li>Percentage to show overall accuracy.</li> 
-    </ol>
-    </div>
-</div>
 
 <!-- no six -->
 <div class="about-item-col">
@@ -179,19 +235,65 @@
 </div>
 
 <!-- no eight -->
-<div class="about-item-col">
-    <div class="about-header">
-        <p>Contact</p>
+    <div class="about-item-col">
+        <div class="about-header">
+            <p>Contact</p>
+        </div>
+        <div class="btn-group"></div>
+    <div class="about-sub-content">
+            <p>For inquires or feedback, vist the <a href="#" target="#">Contact Us</a> page.</p>
     </div>
-    <div class="btn-group"></div>
-<div class="about-sub-content">
-        <p>For inquires or feedback, vist the <a href="#" target="#">Contact Us</a> page.</p>
-</div>
-</div>
-    
-</div>
-    </section>
-</main>
+    </div>
+        
+    </div>
+</section>
+
+    <section id="services">
+        <div class="service-contain">
+            <h3 class="main-header">Services</h3>
+            <div class="service-intro">
+                <h1><span class="service-color">"The Quiz Whiz:</span> Where Learning and <br> Entertainment Collide"</h1>
+            </div>
+        
+            <!-- Flex box -->
+        <div class="service-row">
+            <div class="service-col">
+                <div class="service-icon">
+                    <i class='bx bx-clipboard'></i>
+                </div>
+                <div class="service-header"> ScoreBoard </div>
+                <div class="sub-service-header">
+            Offers Automatic scoring,track progress and results.
+            Shows progress bar or graphs and displays scores.
+           </div>
+            </div>
+           
+ <!-- no two -->
+            <div class="service-col">
+                <div class="service-icon">
+                    <i class='bx bxs-doughnut-chart'></i>
+                </div>
+                <div class="service-header">Analytics and Insights</div>
+                <div class="sub-service-header">
+                    Provides insights and analytics on quiz performance, user 
+                    engagement and Question effectiveness.
+           </div>
+            </div>
+           
+ <!-- no three -->
+            <div class="service-col">
+                <div class="service-icon">
+                    <i class='bx bxs-book-content'></i>
+                </div>
+                <div class="service-header">Education and learning resources</div>
+                <div class="sub-service-header">
+            Offer resources on varieties of questions consigning various programming languages.
+           </div>
+            </div>
+        </div>
+        </div>
+</section>
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
